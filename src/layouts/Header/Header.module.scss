@@ -1,0 +1,23 @@
+.header {
+  @apply flex justify-between items-center;
+
+  .logo {
+    @apply cursor-pointer;
+  }
+
+  .navbar {
+    @apply flex justify-between items-center gap-8;
+
+    .nav {
+      @apply flex justify-between items-center gap-5;
+      .nav_item {
+        @apply text-gray text-sm hover:text-black transition-all
+        cursor-pointer duration-300;
+      }
+    }
+  }
+}
+
+.line {
+  @apply mt-4 h-px w-full bg-gray;
+}

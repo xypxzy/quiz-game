@@ -1,0 +1,33 @@
+.home {
+  @apply flex justify-between items-center 
+  px-20 h-80vh select-none;
+  .info {
+    @apply flex flex-col justify-between gap-5;
+
+    .slogan {
+      & h1 {
+        @apply font-semibold text-3em text-left
+        w-full leading-tight;
+      }
+
+      .slogan2 {
+        @apply flex gap-2 my-5;
+        & span {
+          @apply h-full w-px bg-black text-white;
+        }
+        & h4 {
+          @apply text-dark_gray;
+        }
+      }
+    }
+    .buttons {
+      @apply flex gap-5;
+    }
+  }
+
+  .image {
+    & img {
+      @apply w-60vw h-80vh;
+    }
+  }
+}

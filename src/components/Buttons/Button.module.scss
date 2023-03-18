@@ -1,0 +1,30 @@
+.button {
+  @apply font-primary-font px-4 py-3;
+}
+
+.primary {
+  @apply bg-yellow text-white shadow-btnShadow
+  px-5;
+}
+
+.secondary_none {
+  @apply bg-white text-yellow
+  px-5 border-none flex items-start gap-2;
+}
+.secondary {
+  @apply bg-white text-yellow border 
+  border-yellow py-1 transition-all;
+
+  &:hover {
+    @apply duration-300 ease-in-out bg-yellow text-white;
+  }
+}
+
+.active {
+  @apply py-2 px-5 font-secondary-font text-lg;
+}
+
+.inactive {
+  @apply py-2 px-5 font-secondary-font text-lg
+  bg-gray text-black border-none;
+}
